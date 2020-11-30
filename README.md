@@ -2,17 +2,12 @@
 Map coloring is useful for labling locations on the occupancy map. This tool can be used to color the spots red, ogange, brown, blue, yellow, or green. The hit points of the spot will be increased as so the robot will also not run into objects.
 
 # To use
-- clone repo and use this as starter code
-
-or
-
-- copy modifications in grid.cc/.hh in the following functions:
+1. clone repo into `/brain` and add `.cc` to your MakeFile
+2. copy modifications in grid.cc/.hh in the following functions:
    1. grid_view
    2. stringToInt
    3. stringToInt
-   
-
-## calling functions in brain.cc
+3. calling functions in brain.cc
 since the mbot ranger sensor point in front we use 0 for the angle:
 
 ```
@@ -28,6 +23,11 @@ viz_show(view);
 
 the viz show output will have colored spots where grid_apply_hit_color was applied
 
+4. make sure you have these includes in `brain.cc`:
+```
+#include "grid.hh"
+#include "viz.hh"
+```
 ![imgt](redDot.png)
 
 ### Base Code:
