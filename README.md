@@ -28,6 +28,8 @@ viz_show(view);
 
 the viz show output will have colored spots where grid_apply_hit_color was applied
 
+![imgt](redDot.png)
+
 ### Base Code:
 Builds on starter code hw7 occupancy grid:  https://github.com/NatTuck/cs5335hw-gazebo
 
